@@ -9,13 +9,13 @@ import com.repoanalysis.typeresolver.build.BuildJavaVersion;
 public class Config {
     
     //AutoBuilder's Required Directory Config
-    public static String mainDir = "/home/foyzulhassan/Research/Data/autobuilder_testing/"; //Change this path
+    public static String mainDir = "../maindir/"; //Change this path
     public static String workDir = mainDir + "workdir";
     public static String logDir = mainDir + "logs-lib";
     
     
     //Directory that contains GitHub Projects
-    public static String srcRepoDir = "/home/foyzulhassan/Research/Data/github_Proj_1000/"; //Change this path
+    public static String srcRepoDir = "~/Research/Data/github_Proj/"; //Change this path
     public static String projList=srcRepoDir+"projlist.txt"; //Change the file name    
     
     //Deafult JRE Path
@@ -33,7 +33,7 @@ public class Config {
     public static String script =  mainDir + "build-adv.py";
     
     //Summary File Path
-    public static String summaryLog=mainDir+"BuildSummary.log";
+    public static String summaryLog=mainDir+"buildsummary.log";
     
     public static void reconfig(String filepath) throws IOException{
 	BufferedReader in = new BufferedReader(new FileReader(filepath));
