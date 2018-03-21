@@ -9,7 +9,7 @@ import com.repoanalysis.typeresolver.build.BuildJavaVersion;
 public class Config {
     
     //AutoBuilder's Required Directory Config
-    public static String mainDir = "../maindir/"; //Change this path
+    public static String mainDir = "/home/Research/Autobuilder_Testing/AutoBuilder/maindir/"; //Change this path
     public static String workDir = mainDir + "workdir";
     public static String logDir = mainDir + "logs-lib";
     

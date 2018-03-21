@@ -325,52 +325,10 @@ public class Main {
 			    logger.logTimeEnd("Javac");
 			}
 
-		    }
+		    }   /////// historical build end
 
-		    /////// historical build end
-
-		    flagPart = sumStr.substring(20);
-		    if (flagPart.indexOf("Success") != -1) {
-			// logger.logSummary(sumStr);
-			hisbuildprojcount++;
-			projstatus.setBuildSuccessfulType(
-				"Historical AutoBuilder");
-			projstatus.setBuildStatus("SUCCESSFUL");
-			continue;
-		    }
-
-		    // setUpWorkDir(Config.srcRepoDir + "/"
-		    // + proj.getProjectName());
-		    BaseResolver resolver = new BaseResolver(
-			    Config.workDir + "/" + proj.getProjectName(),
-			    logger);
-		    try {
-			resolver.resolve(basicLoader);
-			sumStr += "|RESOLVE:Success";
-		    } catch (LibResolvingException e) {
-			logger.log(e.getMessage(), Logger.LEVEL_IMPORTANT);
-			sumStr += "|RESOLVE:Failure";
-			e.printStackTrace();
-			cleanAndCopy(proj.getProjectName(), false);
-		    }
-
-		    // retry build
-		    Builder jb = new JavacBuilder();
-		    BuildResult result = jb.build(
-			    proj.getProjectName() + relpathinprj, logger,
-			    BuildJavaVersion.JAVA_18.getText(), "0");
-		    if (result.success()) {
-			sumStr += "|BUILD:Success";
-			projstatus.setBuildSuccessfulType(
-				"Javac Resolve and Build");
-			projstatus.setBuildStatus("SUCCESSFUL");
-
-			javacbuildprojcount++;
-		    } else {
-			sumStr += "|BUILD:Failure";
-		    }
-		    // sumStr += "|" + result.getMajorError();
-		    // sumStr += result.getSummary();
+		 
+		    
 		    cleanAndCopy(proj.getProjectName(), false);
 		    // logger.logSummary(sumStr);
 		} catch (IOException e) {

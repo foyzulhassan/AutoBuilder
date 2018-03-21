@@ -52,14 +52,11 @@ def handleAndroid(path):
     if rfiles == None or festpath == None or respath == None:
         return
     else:
-
-        command = aapt_path + '/aapt package -f -M ' + festpath + ' -F a.out -I ' + android_path + '/android.jar' + ' -S ' + respath + ' -m -J ' + path + '/src'
-
+	command = aapt_path+'/aapt package -f -M '+festpath + ' -F a.out -I ' + android_path + '/android.jar' + ' -S ' + respath + ' -m -J ' + path + '/src'
 	festfilepath = path + '/summary_command_files'
     	f = open(festfilepath, 'w')    	
         f.write(command + '\n')
     	f.close()
-
         print command
         print commands.getoutput(command) 
     
