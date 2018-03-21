@@ -23,7 +23,7 @@ AutoBuilder will try to build all the selected project in source directory. All 
 
 # Papers on AutoBuilder
 
-Automatic Building of Java Projects in Software Repositories: A Study on Feasibility and Challenges
+Automatic Building of Java Projects in Software Repositories: A Study on Feasibility and Challenges.
 Foyzul Hassan, Shaikh Mostafa, Edmund Lam, Xiaoyin Wang
 ACM/IEEE Symposium on Empirical Software Engineering and Measurement (ESEM), 38–47, Nov, 2017
 
