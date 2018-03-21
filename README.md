@@ -21,7 +21,7 @@ java -cp AutoBuilder-0.0.1-SNAPSHOT.jar  com.autobuilder.Main
 AutoBuilder will try to build all the selected project in source directory. All the project's build log will be stored at ~\AutoBuilder\maindir\logs-lib. After trying to build all the project, summary of project build will be stored at ~\AutoBuilder\maindir\buildsummary.log file.
 
 
-# Papers on AutoBuilder
+### Paper on AutoBuilder
 
 Automatic Building of Java Projects in Software Repositories: A Study on Feasibility and Challenges.
 Foyzul Hassan, Shaikh Mostafa, Edmund Lam, Xiaoyin Wang
