@@ -2,7 +2,7 @@
 An automatic approach to build Java project managed by Ant, Maven and Gradle in batch mode. For building we used default build commands for Ant, Maven and Gradle. Using this tool projects can also be built with different version of JDK. Even after using default command there can have issue of Java and Build tool version issue. To resolve the issue, we used commit date to dynamically select tool version.
 
 ### How to Configure and Run the Tool
-Since the tool tries to build project in batch mode, we need to set the path of the subject project repo directory. Suppose the subject projects are in "~/GitHubProject_Dir" folder. Then in Config.java file we need to set following path
+Since the tool tries to build project in batch mode, we need to set the path of the subject project repo directory. Suppose the subject projects are in "~/GitHubProject_Dir" folder. Then in ~\AutoBuilder\src\com\config\Config.java file we need to set the following path
 
 public static String srcRepoDir = "~/GitHubProject_Dir"; 
 
